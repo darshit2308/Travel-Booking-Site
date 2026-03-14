@@ -12,3 +12,5 @@ Another test checking
 Editing for branch 3
 
 Testing the milestone feature in probot
+
+Editing for test-branch-1
