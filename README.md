@@ -8,7 +8,7 @@ Planning a trip should be exciting, not overwhelming.
 That is why we built a platform that prioritizes simplicity, transparency, and convenience.
 
 Every traveler has a unique journey in mind.
-Some seek relaxation on sunny beaches.
+Some seek relaxation on sunny beacheknxgs.
 Others crave adventure in mountains and forests.
 Many travelers want to explore vibrant cities and cultural landmarks.
 No matter your travel style, our platform helps you find the perfect destination.
