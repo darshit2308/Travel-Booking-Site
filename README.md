@@ -11,6 +11,7 @@ Every traveler has a unique journey in mind.
 Some seek relaxation on sunny beacheknxgs.
 Others crave adventure in mountains and forests.
 Many travelers want to explore vibrant cities and cultural landmarks.
+some changes
 No matter your travel style, our platform helps you find the perfect destination.
 You can search for flights, compare hotel prices, and book packages within minutes.
 Our system aggregates travel options from trusted providers worldwide.
