@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Page</title>
+  <link rel="stylesheet" href="/stylesheets/page2.css">
+</head>
+<dialog class="formContainer">
+  <button class="close">x</button>
+  <section class="LOGIN">
+
+    <div>
+      <span>Log In</span>
+    </div>
+    <form>
+      <div class="email">
+        <input type="email" name="email" id="email" placeholder="Email">
+      </div>
+      <div class="password">
+        <input type="password" name="password" id="password" placeholder="password">
+      </div>
+      <div class="forgot">
+        <p>Forgot Password ??</p>
+      </div>
+      <div class="Login">
+        <button>Login</button>
+      </div>
+      <div class="noAccount">
+        <p>Dont't have an account? <a class="sign-up">Sign Up</a></p>
+      </div>
+    </form>
+  </section>
+
+  <section class="SIGNUP">
+    <!-- <button class="close">x</button> -->
+    <div>
+      <span>Sign Up</span>
+    </div>
+    <form>
+      <div class="email">
+        <input type="email" name="email1" id="email1" placeholder="Email">
+      </div>
+      <div class="password">
+        <input type="password" name="password1" id="password1" placeholder="Create Password">
+      </div>
+      <div class="password">
+        <input type="password" name="password2" id="password2" placeholder="Confirm Password">
+      </div>
+      <!-- <div class="forgot">
+                    <p>Forgot Password ??</p>
+                </div> -->
+      <div class="Login">
+        <button>Signup</button>
+      </div>
+      <div class="noAccount">
+        <p>Already have an Account? <a class="log-in">Login</a></p>
+      </div>
+    </form>
+  </section>
+
+  <section class="forgotPass">
+    <div class="validate">
+      <span>Validate Account</span>
+    </div>
+    <div class="option1">
+      <input type="email" placeholder="Email">
+    </div>
+    <div class="or">
+      <span>OR</span>
+    </div>
+    <div class="option2">
+      <input type="number" placeholder="phone No.">
+    </div>
+    <div class="submitDetail">
+      <button>Submit</button>
+    </div>
+  </section>
+
+
+
+</dialog>
+
+<body>
+  <div class="navbar">
+    <div class="nav-container">
+        <div class="nav-item"><a href="/">Home</a></div>
+        <div class="nav-item"><a href="/about">About Us</a></div>
+        <div class="nav-item"><a href="/bookings">Your Bookings</a></div>
+        
+    </div>
+    <div class="auth-buttons">
+      <button class="btn sign-in">LogIn / SignUp</button>
+    </div>
+  </div>
+  <div class="background"> <img id="logo" src="./images/logo.png"></div>
+  <div class="box"></div>
+
+  <main>
+   
+    
+   
+    
+    <div class="cover">
+
+    <div class="transport-options">
+      <button id="bus-option" class="option" onclick="showSelectors('bus', this)">Bus</button>
+      <button id="train-option" class="option" onclick="showSelectors('train', this)">Train</button>
+      <button id="flight-option" class="option" onclick="showSelectors('flight', this)">Flight</button>
+      
+  </div>
+  
+  <div id="bus-selectors" class="selectors" style="display: none;">
+      <!-- Bus-specific selectors -->
+      <div class="fromto">
+          <select id="from-bus">
+              <option value="null">Depart City (from)</option>
+              <option value="City1">Surat</option>
+              <option value="City2">Gwalior</option>
+              <option value="City3">Jaipur</option>
+          </select>
+          <img class="imgbus" style="cursor: pointer;" src="./Images/reverse.png" width="30px" height="30px">
+          <select id="to-bus">
+              <option value="null">Destination City (to)</option>
+              <option value="City1">Surat</option>
+              <option value="City2">Gwalior</option>
+              <option value="City3">Jaipur</option>
+          </select>
+      </div>
+      <div class="details">
+        <h2>Select Date of Travel :</h2>
+        <input type="date">
+    </div>
+  </div>
+  
+  <div id="train-selectors" class="selectors" style="display: none;">
+      <!-- Train-specific selectors -->
+      <div class="fromto">
+          <select id="from-train">
+              <option value="null">Depart City (from)</option>
+              <option value="Gwalior">Gwalior</option>
+              <option value="Surat">Surat</option>
+              <option value="Jaipur">Jaipur</option>
+          </select>
+          <img class="imgtr" style="cursor: pointer;" src="./Images/reverse.png" width="30px" height="30px">
+          <select id="to-train">
+              <option value="null">Destination City (to)</option>
+              <option value="Gwalior">Gwalior</option>
+              <option value="Surat">Surat</option>
+              <option value="Jaipur">Jaipur</option>
+          </select>
+      </div>
+      <div class="details">
+          <h2>Select Date of Travel :</h2>
+          <input type="date">
+      </div>
+      <div class="class-select">
+          <h2>Select Class :</h2>
+          <select id="sclass">
+              <option value="1A">First AC (1A)</option>
+              <option value="2A">2 Tier AC (2A)</option>
+              <option value="3A">3 Tier AC (3A)</option>
+              <option value="SL">Sleeper Class (SL)</option>
+          </select>
+      </div>
+  </div>
+  
+  <div id="flight-selectors" class="selectors" style="display: none;">
+      <!-- Flight-specific selectors -->
+      <div class="fromto">
+          <select id="from-flight">
+              <option value="null">Depart City (from)</option>
+              <option value="CityA">Mumbai</option>
+              <option value="CityB">Chennai</option>
+              <option value="CityC">Delhi</option>
+          </select>
+          <img class="imgfl" style="cursor: pointer;"  src="./Images/reverse.png" width="30px" height="30px">
+          <select id="to-flight">
+              <option value="null">Destination City (to)</option>
+              <option value="CityA">Mumbai</option>
+              <option value="CityB">Chennai</option>
+              <option value="CityC">Delhi</option>
+          </select>
+      </div>
+      <div class="details">
+          <h2>Select Date of Travel :</h2>
+          <input type="date">
+      </div>
+      <div class="class-select">
+          <h2>Select Class :</h2>
+          <select id="fclass">
+              <option value="Economy">Economy</option>
+              <option value="Business">Business</option>
+              <option value="First">First Class</option>
+          </select>
+      </div>
+  </div>
+  <button class="search">SEARCH</button>
+
+</div>
+
+  
+    
+
+  </main>
+  <div class="b1"></div>
+</body>
+<script src="/javascripts/page2.js"></script>
+
+</html>

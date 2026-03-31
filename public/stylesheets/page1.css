@@ -1,0 +1,702 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Background and Main Section */
+  .main {
+    background-image: url("/images/landingBg.jpeg");
+    background-size: max(1200px, 100vw);
+    background-position: center;
+    height: 550px;
+    position: relative;
+  }
+  
+  .main .box {
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    height: 550px;
+    opacity: 0.4;
+    top: 0;
+  }
+  
+  /* Auth Buttons */
+  .auth-buttons {
+    margin-right: -350px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+  }
+  
+  .sign-in {
+    background: linear-gradient(45deg, #0062e6, #33aeff);
+    position: absolute;
+    top: 3.5rem;
+  }
+  
+  /* Form Container */
+  .formContainer {
+    width: 30%;
+    height: 65%;
+    position: absolute;
+    top: 1rem;
+    margin: auto;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+    position: fixed;
+  }
+  
+  .formContainer div,
+  .loginOrSignup button,
+  .Login button,
+  .submitDetail button {
+    margin: auto;
+    border-radius: 40px;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+  
+  .login {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login form {
+    margin-top: 6rem;
+  }
+  
+  .login div {
+    position: absolute;
+    left: 12rem;
+    font-size: 2rem;
+  }
+  
+  .close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    line-height: 0rem;
+  }
+  
+  .formContainer .LOGIN div,
+  .formContainer .SIGNUP div {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  
+  .formContainer form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .formContainer input {
+    height: 3rem;
+    width: 20rem;
+  }
+  
+  .formContainer span {
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  
+  .forgot,
+  .sign-up,
+  .log-in {
+    color: #0000ee;
+  }
+  
+  .forgot:hover,
+  .sign-up:hover,
+  .log-in:hover {
+    cursor: pointer;
+  }
+  
+  .Login button,
+  .submitDetail button {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+  }
+  
+  .forgotPass {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  .or,
+  .validate,
+  .option1,
+  .option2,
+  .submitDetail {
+    text-align: center;
+  }
+  
+  .submitDetail button {
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    background-color: blue;
+    border-radius: 10px;
+  }
+  
+  .hello {
+    transform: rotate(-90deg);
+    transition: transform 0.3 ease;
+    transition-duration: 0.5s;
+  }
+  
+  .seperate {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    font-size: 1.15rem;
+    font-weight: 100;
+  }
+  
+  /* Front Page Slogans */
+  .promotions {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    color: white;
+    align-items: center;
+    gap: 30px;
+    
+    top:40px
+  }
+  
+  .slog1 {
+    position: relative;
+    font-size: 47px;
+    font-weight: bolder;
+    bottom: 0;
+    letter-spacing: -1px;
+  }
+  
+  .slog2 {
+    font-size: 28px;
+  }
+  
+  .slog3 {
+    font-size: 22px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 1426px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Language Dropdown */
+  .language-select {
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-dropdown {
+    position: relative;
+    left: 83px;
+    bottom: 18px;
+    padding: 12px 18px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  .language-dropdown:hover {
+    border-color: #0062e6;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+  
+  /* Book Tickets Button */
+  .book-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6f61, #d56b6b);
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .book-button:hover {
+    background: linear-gradient(45deg, #d56b6b, #ff6f61);
+    transform: translateY(-2px);
+  }
+  
+  .book-button:active {
+    transform: translateY(2px);
+  }
+  
+  /* FAQ Section */
+  .faq {
+    background: black;
+    color: white;
+    padding: 34px;
+  }
+  
+  .faq h2 {
+    text-align: center;
+    font-size: 48px;
+  }
+  
+  .faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+  }
+  
+  .faqbox:hover {
+    background-color: #414141;
+    color: white;
+  }
+  
+  .faqbox svg {
+    filter: invert(1);
+  }
+  
+  .rotate {
+    transform: rotate(45deg);
+    transition: transform 0.3 ease;
+    transition-duration: 1s;
+  }
+  
+  /* Footer */
+  footer {
+    width: 100%;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+  }
+  
+  .footer {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 6rem;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    list-style-type: none;
+  }
+  
+  .footer-item a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .questions {
+    margin-top: 0rem;
+  }
+  
+  .separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+  }
+  
+  .footer2 {
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .followUs {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .leftLine, .rightLine {
+    height: 3px;
+    width: 30rem;
+    background-color: grey;
+  }
+  
+  .leftLine {
+    margin-right: 0.5rem;
+  }
+  
+  .rightLine {
+    margin-left: 0.5rem;
+  }
+  
+  .footer2 span {
+    width: 13rem;
+    font-size: 3rem;
+    margin: auto;
+  }
+  
+  .media {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 2rem;
+    gap: 3rem;
+  }
+  .media svg {
+    filter: none; /* Remove invert filter */
+    transform: none; /* Remove scaling */
+    background-color: transparent; /* Ensure background is not affecting visibility */
+  }
+  
+  
+  .footer2 button {
+    width: 20rem;
+    height: 3rem;
+    margin: 2rem auto;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+  }
+  
+  .copyRight {
+    text-align: center;
+    margin: 0;
+  }
+  /* Most visited places section */
+  .mostVisit {
+    height: 35rem;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .TopPlaces {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  
+  .images {
+    display: flex;
+    flex-wrap: nowrap;
+    width: calc(240px * 12 + 2rem * 11); /* Adjust width for scrolling items */
+    animation: scroll 60s linear infinite; /* Slower scrolling speed */
+    margin-top: 35px;
+    gap: 100px;;
+  }
+  
+  .images:hover {
+    animation-play-state: paused; /* Pause the animation on hover */
+  }
+  
+  .images div {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 22rem;
+    width: 275px; /* Ensure consistent width for scrolling */
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px rgb(226, 225, 225);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    transition: transform 0.65s;
+    margin-right: 2rem; /* Adjust space between cards */
+  }
+  
+  .images div:hover {
+    transform: scale(1.1);
+  }
+  
+  .images span {
+    display: block;
+    margin-top: 0.4rem;
+    color: black; /* Changed to black for better visibility */
+    font-size: 1.5rem;
+  }
+  
+  .images img {
+    border-radius: 16px;
+  }
+  
+  .images button {
+    position: relative;
+    background-color: rgb(230, 34, 77);
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 154px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  
+  .images button::before {
+    content: "";
+    background-color: rgb(248, 50, 93);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  .images button:hover::before {
+    width: 100%;
+  }
+  
+  
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  
+  
+  /* Login / SignUp page */
+  
+  .formContainer {
+    width: 70%;
+    height: 66%;
+    position: absolute;
+    top: 1rem;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+    position: fixed;
+  }
+  .content {
+    
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .loginImage  {
+    height: 500px;
+    width: 500px;
+    display: flex;
+  }
+  .loginImage img {
+    margin-top: 1rem;
+    border-radius: 10px;
+    margin-left: -2rem;
+    /* box-shadow: 4px 4px 4px 4px rgb(64, 63, 63); */
+    box-shadow: 4px 4px 4px 4px rgb(109, 109, 109);
+  }
+  .welcome {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  /* .line {
+    width: 2px;
+    height: 100rem;
+    background-color: black;
+  } */
+  .formContainer div,
+  .loginOrSignup button {
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 40px;
+    height: 3rem;
+    border: none;
+    font-size: 1.25rem;
+  }
+  
+  .login form {
+    margin-top: 6rem;
+  }
+  .login div {
+    position: absolute;
+    left: 12rem;
+    font-size: 2rem;
+  }
+  .login {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    line-height: 0rem;
+  }
+  .close:hover {
+    opacity: 0.7;
+  }
+  .formContainer .LOGIN div {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  .formContainer form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .formContainer input {
+    height: 3rem;
+    width: 20rem;
+    /* border: 0.1px solid grey;
+      border-radius: 5px; */
+  }
+  .formContainer span {
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  .forgot {
+    color: #0000ee;
+    margin-top: 1rem;
+  }
+  .sign-up,
+  .log-in {
+    color: #0000ee;
+  }
+  .forgot,
+  .sign-up:hover,
+  .log-in:hover {
+    cursor: pointer;
+  }
+  .Login button {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+  }
+  .forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formContainer .SIGNUP div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+  }
+  .SIGNUP span {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .SIGNUP div {
+    margin-bottom: 1rem;
+  }
+  
+  .forgotPass {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .forgotPass div {
+    margin-bottom: 2rem;
+  }
+  .or,
+  .validate,
+  .option1,
+  .option2 {
+    text-align: center;
+  }
+  .submitDetail {
+    text-align: center;
+  }
+  .submitDetail button {
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background-color: blue;
+    border-radius: 10px;
+  }
+  

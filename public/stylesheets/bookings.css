@@ -1,0 +1,71 @@
+/* Resetting some default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #9e9c9c;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #006adb;
+}
+
+.booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.booking-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.booking-card p strong {
+    color: #007bff;
+}
+
+/* Specific styles for booking types */
+.booking-card.bus {
+    border-left: 5px solid #28a745; /* Green color for bus */
+}
+
+.booking-card.train {
+    border-left: 5px solid #ffc107; /* Yellow color for train */
+}
+
+.booking-card.flight {
+    border-left: 5px solid #dc3545; /* Red color for flight */
+}

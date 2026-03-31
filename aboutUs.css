@@ -1,0 +1,345 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2c3e50;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+}
+
+p, ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+    font-size: 3rem;
+}
+footer p {
+    color: white;
+}
+.mission div{
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: center;
+    align-items: center;
+}
+.mission img {
+    border-radius: 50%;
+}
+
+/* Developers Section */
+
+.devs{
+    /* position: absolute; */
+    color: aliceblue;
+    /* left: center; */
+    margin-bottom: 14rem;
+    color: black;
+}
+.cards{
+    background-color: aliceblue;
+    height:200px;
+    width:20%;
+    margin-bottom: 50px;
+    display: flex;
+    line-height: 2;
+}
+.photo{
+    height:99%;
+    width:auto;
+    border: 1% solid white;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+    font-size: 3rem;
+    flex-wrap: wrap;
+    height:60vh;
+    top:20px;
+    display: flex;
+    background-color: black;
+    width:100%;
+    justify-content: space-around;
+    align-items:end;
+}
+.footer p {
+    color: white;
+}
+.developers {
+    margin-top: 4rem;
+    margin-bottom: 20rem;
+    height: 25rem;
+}
+
+
+                                /*  About Us Section */
+.card {
+    margin: auto;
+    width: min(300px, 100%);
+    background-color: #fefefe;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: #141417;
+  }
+/* .card_hero {
+    height: 1rem;
+} */
+.card img {
+    border-radius: 50%;
+}
+  .cards {
+    width: 79%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80rem;
+    
+  }
+  .card__hero {
+    height: 20rem;
+    background-color: #fef4e2;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .card__hero .card__job-title {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 2rem;
+  }
+  .card__hero-header {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap; */
+    gap: 1rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  .card__footer {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: start; */
+    flex-flow: column nowrap;
+    padding: 0.75rem;
+    row-gap: 1rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+  @media (min-width: 340px) {
+    .card__footer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+  .card__job-summary {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+  }
+  .card__btn {
+    width: 100%;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+    border-radius: 1rem;
+    background-color: #141417;
+    color: #fff;
+    font-size: 1rem;
+  }
+  @media (min-width: 340px) {
+    .card__btn {
+      width: max-content;
+    }
+  }
+  
+  /*  Social button */
+  .social svg {
+    height: 25px;
+  }
+  
+  .social {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7e7e7;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    height: 50px;
+    width: 200px;
+  }
+  
+  .social::before, .social::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    transition: 0.25s linear;
+    z-index: 1;
+  }
+  
+  .social::before {
+    content: "";
+    left: 0;
+    justify-content: flex-end;
+    background-color: #4d60b6;
+  }
+  
+  .social::after {
+    content: "";
+    right: 0;
+    justify-content: flex-start;
+    background-color: #4453a6;
+  }
+  
+  .social:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .social:hover span {
+    opacity: 0;
+    z-index: -3;
+  }
+  
+  .social:hover::before {
+    opacity: 0.5;
+    transform: translateY(-100%);
+  }
+  
+  .social:hover::after {
+    opacity: 0.5;
+    transform: translateY(100%);
+  }
+  
+  .social span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    font-family: 'Fira Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+  }
+  
+  .social .social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+  
+  .social .social-link svg {
+    text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+    transform: scale(1);
+  }
+  
+  .social .social-link:hover {
+    background-color: rgba(249, 244, 255, 0.774);
+    animation: bounce_613 0.4s linear;
+  }
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
